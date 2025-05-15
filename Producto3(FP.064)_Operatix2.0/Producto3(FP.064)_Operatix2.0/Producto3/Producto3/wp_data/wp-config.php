@@ -41,13 +41,13 @@ if (!function_exists('getenv_docker')) {
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', getenv_docker('WORDPRESS_DB_NAME', 'wp_database') );
+define( 'DB_NAME', getenv_docker('WORDPRESS_DB_NAME', 'wordpress') );
 
 /** Database username */
-define( 'DB_USER', getenv_docker('WORDPRESS_DB_USER', 'user') );
+define( 'DB_USER', getenv_docker('WORDPRESS_DB_USER', 'example username') );
 
 /** Database password */
-define( 'DB_PASSWORD', getenv_docker('WORDPRESS_DB_PASSWORD', 'adminadmin') );
+define( 'DB_PASSWORD', getenv_docker('WORDPRESS_DB_PASSWORD', 'example password') );
 
 /**
  * Docker image fallback values above are sourced from the official WordPress installation wizard:
@@ -56,7 +56,7 @@ define( 'DB_PASSWORD', getenv_docker('WORDPRESS_DB_PASSWORD', 'adminadmin') );
  */
 
 /** Database hostname */
-define( 'DB_HOST', getenv_docker('WORDPRESS_DB_HOST', 'db:3306') );
+define( 'DB_HOST', getenv_docker('WORDPRESS_DB_HOST', 'mysql') );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', getenv_docker('WORDPRESS_DB_CHARSET', 'utf8') );
@@ -75,14 +75,14 @@ define( 'DB_COLLATE', getenv_docker('WORDPRESS_DB_COLLATE', '') );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         getenv_docker('WORDPRESS_AUTH_KEY',         '9960178e547d95917e4854099d146eb173c187c6') );
-define( 'SECURE_AUTH_KEY',  getenv_docker('WORDPRESS_SECURE_AUTH_KEY',  '011731ae4dce9f7adb9486a9e8dd557d988200de') );
-define( 'LOGGED_IN_KEY',    getenv_docker('WORDPRESS_LOGGED_IN_KEY',    'c3fc8ef37f820e4f7353446efc952be2a79265ba') );
-define( 'NONCE_KEY',        getenv_docker('WORDPRESS_NONCE_KEY',        '71d63ee0c3864cc8b9c1fd109e1d12ab7fd224fa') );
-define( 'AUTH_SALT',        getenv_docker('WORDPRESS_AUTH_SALT',        '450cde6d4374a2888ce53c89c4179e8171f6274f') );
-define( 'SECURE_AUTH_SALT', getenv_docker('WORDPRESS_SECURE_AUTH_SALT', '74c179056bdc70379678ab4bb62b3917b1038c3c') );
-define( 'LOGGED_IN_SALT',   getenv_docker('WORDPRESS_LOGGED_IN_SALT',   'f42299bb442da87f25f757be27cb178e4ceed923') );
-define( 'NONCE_SALT',       getenv_docker('WORDPRESS_NONCE_SALT',       'e45bd49245f5d599803f7c1df553fe97d91d2aa3') );
+define( 'AUTH_KEY',         getenv_docker('WORDPRESS_AUTH_KEY',         '975c85a47c66eae7455d62f30346c900fcaefbf8') );
+define( 'SECURE_AUTH_KEY',  getenv_docker('WORDPRESS_SECURE_AUTH_KEY',  'db3bce9fe8aab1886e57755a44de73a7a5860a80') );
+define( 'LOGGED_IN_KEY',    getenv_docker('WORDPRESS_LOGGED_IN_KEY',    'a88f2715ca0e3a7c2b93d1a94b8b81a2d345db6b') );
+define( 'NONCE_KEY',        getenv_docker('WORDPRESS_NONCE_KEY',        '31564149911e0af7ab099c3cf1b9e903e6048eeb') );
+define( 'AUTH_SALT',        getenv_docker('WORDPRESS_AUTH_SALT',        '2bf2b6b902a89cac0027d09bd364f7cc8f37546b') );
+define( 'SECURE_AUTH_SALT', getenv_docker('WORDPRESS_SECURE_AUTH_SALT', '2abbb3eb9c96b8a197b8fdf7e4a5aea893dfce29') );
+define( 'LOGGED_IN_SALT',   getenv_docker('WORDPRESS_LOGGED_IN_SALT',   '3a8e0d6effe3fc1b84eae7fa3be63c19870ead8b') );
+define( 'NONCE_SALT',       getenv_docker('WORDPRESS_NONCE_SALT',       '78e08ebd80902467fc34786a31a66c3fc79ce161') );
 // (See also https://wordpress.stackexchange.com/a/152905/199287)
 
 /**#@-*/

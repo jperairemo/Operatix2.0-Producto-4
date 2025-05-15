@@ -45,7 +45,7 @@ services:
       - "8082:80"
     environment:
       WORDPRESS_DB_HOST: db:3306
-      WORDPRESS_DB_NAME: isla_transfers
+      WORDPRESS_DB_NAME: wp_operatix
       WORDPRESS_DB_USER: root
       WORDPRESS_DB_PASSWORD: adminadmin
     volumes:
