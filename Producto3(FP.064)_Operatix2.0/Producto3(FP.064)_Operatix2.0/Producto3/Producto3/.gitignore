@@ -1,0 +1,50 @@
+# -------------------------------------
+# NODE / NPM / JS / Laravel / Composer
+# -------------------------------------
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/vendor
+.phpunit.cache
+.phpunit.result.cache
+npm-debug.log
+yarn-error.log
+
+# -------------------------------------
+# ARCHIVOS DE ENTORNOS OPCIONALES
+# -------------------------------------
+.env.backup
+.env.production
+
+# 👇 Incluimos .env para que TODOS usen el mismo
+# (¡OJO! Esto solo se recomienda si estás en entorno de desarrollo controlado)
+# .env   <-- Quitado del ignore para que se comparta
+
+# -------------------------------------
+# EDITORES / IDEs
+# -------------------------------------
+/.idea
+/.vscode
+/.fleet
+/.zed
+/.nova
+
+# -------------------------------------
+# LARAVEL HOMESTEAD
+# -------------------------------------
+Homestead.json
+Homestead.yaml
+
+# -------------------------------------
+# GITIGNORE PERSONALIZADO PARA WORDPRESS EN ESTE PROYECTO
+# -------------------------------------
+# Permitir todo wp_data salvo archivos muy pesados
+# (no ignoramos nada ahora para subir el estado actual completo)
+
+# ⚠️ En el futuro puedes ignorar esto si no cambia:
+# wp_data/wp-content/uploads/
+# wp_data/wp-content/cache/
+# wp_data/wp-content/upgrade/
