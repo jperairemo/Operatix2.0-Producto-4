@@ -260,4 +260,18 @@ class HotelController extends Controller
 
     }
 
+        public function index()
+    {
+        try {
+            return response()->json(\App\Models\Hotel::all(), 200);
+        } catch (\Throwable $e) {
+            return response()->json([
+                'error' => true,
+                'message' => $e->getMessage()
+            ], 500);
+        }
+    }
+
+
+
 }
