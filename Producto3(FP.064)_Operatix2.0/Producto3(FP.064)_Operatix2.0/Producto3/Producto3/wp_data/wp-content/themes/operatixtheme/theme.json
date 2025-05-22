@@ -1,13 +1,22 @@
 {
-	"$schema": "https://schemas.wp.org/wp/6.8/theme.json",
 	"settings": {
 		"appearanceTools": true,
 		"layout": {
 			"contentSize": "620px",
 			"wideSize": "1000px"
 		},
+		"shadow": {
+			"presets": []
+		},
 		"spacing": {
-			"units": [ "%", "px", "em", "rem", "vh", "vw" ]
+			"units": [
+				"%",
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw"
+			]
 		},
 		"typography": {
 			"fontFamilies": [
@@ -15,10 +24,73 @@
 					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
 					"name": "System Font",
 					"slug": "system-font"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"Abhaya Libre\"",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/abhaya-libre/abhaya-libre-500-normal.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Abhaya Libre\", serif",
+					"name": "Abhaya Libre",
+					"slug": "abhaya-libre"
 				}
-			]
+			],
+			"fontSizes": []
 		},
 		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"color": {
+			"background": "#1a8c64",
+			"text": "var(--wp--preset--color--white)"
+		},
+		"elements": {
+			"caption": {
+				"color": {
+					"text": "var(--wp--preset--color--cyan-bluish-gray)"
+				}
+			},
+			"heading": {
+				"color": {
+					"text": "#064a31"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--system-font)"
+				}
+			},
+			"link": {
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--white)"
+					}
+				},
+				"color": {
+					"text": "#23d795"
+				},
+				"typography": {
+					"fontSize": "21px",
+					"lineHeight": "0.9"
+				}
+			}
+		},
+		"spacing": {
+			"blockGap": "42px",
+			"padding": {
+				"bottom": "0px",
+				"left": "0px",
+				"right": "0px",
+				"top": "0px"
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--system-font)"
+		}
 	},
 	"templateParts": [
 		{
@@ -30,5 +102,6 @@
 			"name": "footer"
 		}
 	],
-	"version": 3
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json"
 }
