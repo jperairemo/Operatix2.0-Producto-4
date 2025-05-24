@@ -1,0 +1,32 @@
+[
+  {
+    "nombre": "Hotel Ciudad Nocturna",
+    "imagen": "/wp-content/uploads/2025/05/pexels-tomfisk-3285716.jpg",
+    "descripcion": "Hotel moderno en el corazón de la ciudad con piscina rooftop.",
+    "ubicacion": "Los Ángeles"
+  },
+  {
+    "nombre": "Hotel Tropical Atardecer",
+    "imagen": "/wp-content/uploads/2025/05/pexels-pixabay-258154.jpg",
+    "descripcion": "Relájate en este oasis tropical al atardecer, rodeado de palmeras.",
+    "ubicacion": "Tailandia"
+  },
+  {
+    "nombre": "Resort Aqua Blue",
+    "imagen": "/wp-content/uploads/2025/05/pexels-boonkong-boonpeng-442952-1134176.jpg",
+    "descripcion": "Disfruta de una experiencia única en nuestro resort con piscina infinita.",
+    "ubicacion": "Maldivas"
+  },
+  {
+    "nombre": "Grand Luxé Palace",
+    "imagen": "/wp-content/uploads/2025/05/pexels-tomfisk-3285716.jpg",
+    "descripcion": "Hotel urbano de lujo.",
+    "ubicacion": "Madrid"
+  },
+  {
+    "nombre": "Hotel La Vella Farga",
+    "imagen": "https://www.petitsgranshotelsdecatalunya.com/media/hoteles/hotel-la-vella-farga/medium/hotel-vella-farga-piscina-exterior.jpg",
+    "descripcion": "Hotel de montaña con encanto.",
+    "ubicacion": "Lleida"
+  }
+]

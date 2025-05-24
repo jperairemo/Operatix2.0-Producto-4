@@ -34,6 +34,13 @@ services:
       PMA_HOST: db
       PMA_USER: root
       PMA_PASSWORD: adminadmin
+<<<<<<< Updated upstream
+=======
+      UPLOAD_LIMIT: 128M
+      PHP_UPLOAD_MAX_FILESIZE: 128M
+      PHP_POST_MAX_SIZE: 128M
+      MAX_EXECUTION_TIME: 600
+>>>>>>> Stashed changes
     networks:
       - my_network
     depends_on:
